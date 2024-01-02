@@ -19,7 +19,7 @@ public class MyThread extends Thread{
         System.out.println(this.name);
         if (checkBalance(this.sum)) {
             try {
-                Thread.sleep(0);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {}
             getMoney(this.sum);
             System.out.println(this.name +" +" +this.sum + "  " + balance);
